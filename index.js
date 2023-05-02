@@ -10,6 +10,9 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.get("/",(req,res)=>{
     res.render("default");
 } )
+app.get("/contact",(req,res)=>{
+    res.render("contact");
+} )
 
 app.listen(4040, ()=>{
     console.log("server started on port 4040");
