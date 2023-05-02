@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@600&family=Raleway:wght@300&family=Ubuntu:wght@300&display=swap');
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+    padding: 0px 50px 0px 80px;
+    overflow: hidden;
+    border-bottom: 1px solid black;
+    transition: 200ms ease-in;
+    background-color: white;
+}
+
+.topnav a {
+    font-weight: bold;
+    font-family: "Raleway";
+    float: left;
+    display:block;
+    color: black;
+    text-align: center;
+    padding: 45px 20px 35px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav .navLinks:hover {
+    color: blueviolet;
+}
+
+.topnav .logo {
+    padding: 15px 0px;
+    font-family: "Jura";
+    font-size: xx-large;
+    text-align: left;
+    display: inline-block;
+    color: black;
+    width: 62%;
+}
+
+.logo img{
+    padding: 0px;
+    width: 270px;
+    height: 70px;
+}
+.topnav .icon {
+    color: blueviolet;
+    display: none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    box-shadow: 1px 1px 20px black;
+}
+
+.sticky a.icon{
+    margin-right: 37px;
+}
+
+.sticky+.content {
+    padding-top: 107px;
+}
+
+@media screen and (max-width: 1337px) and (min-width: 970px){
+    .topnav .logo{
+        width:calc(40vw);
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .topnav{
+        padding: 0px 0px 0px 20px;
+        transition: 200ms ease-in;
+    }
+    
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .topnav.responsive {
+        padding: 0px 0px 0px 20px;
+        transition: 200ms ease-in;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: 200ms ease-in;
+    }
+    /* .topnav.responsive .logo {
+        width: auto;
+    } */
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        transition: 200ms ease-in;
+    }
+}
